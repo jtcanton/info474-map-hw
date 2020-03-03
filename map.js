@@ -9,9 +9,9 @@ const svg = d3.select('body').append('svg')
 
 const g = svg.append('g')
 
-d3.json('../nygeo.json').then(function (data) {
+d3.json('./nygeo.json').then(function (data) {
 
-    d3.csv('../data.csv').then(function (bnbData) {
+    d3.csv('./data.csv').then(function (bnbData) {
 
         console.log(data)
 
